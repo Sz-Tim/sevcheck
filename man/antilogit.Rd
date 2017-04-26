@@ -9,6 +9,9 @@ antilogit(x)
 \arguments{
 \item{x}{A numeric vector, matrix, or array}
 }
+\value{
+Object of the same dimensions as x
+}
 \description{
 This function calculates the antilogit for the object 'x' (range -Inf to Inf),
 returning the corresponding proportions (range 0 to 1).

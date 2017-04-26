@@ -9,8 +9,12 @@ se(x)
 \arguments{
 \item{x}{A numeric vector}
 }
+\value{
+standard error value
+}
 \description{
-This function calculates the standard error for a vector because R for some reason doesn't.
+This function calculates the standard error for a vector because R for 
+some reason doesn't.
 }
 \note{
 NAs are removed from the calculation

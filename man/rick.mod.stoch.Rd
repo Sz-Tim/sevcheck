@@ -19,6 +19,9 @@ rick.mod.stoch(nSpp, tMax, r, N, K, sd)
 
 \item{sd}{Vector (length nSpp) of the standard deviation in annual growth rate for each species}
 }
+\value{
+Updated matrix N with simulated abundances
+}
 \description{
 This function generates stochastic population abundances for a nSpp species.
 }

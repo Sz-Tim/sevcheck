@@ -11,11 +11,18 @@ sp.band(sp.df, els)
 
 \item{els}{Vector of elevations}
 }
+\value{
+Returns a list with items "sp", "g", and "sf" which each contain a 
+vector of interpolated richness values
+}
 \description{
-This function interpolates species richness for a sequence of elevational bands based on the range limits of a set of species.
+This function interpolates species, genus, and subfamily richness for a 
+sequence of elevational bands based on the range limits of a set of species.
 }
 \examples{
 sp.df <- data.frame(Binomial=LETTERS[1:10],
+                    Genus=rep(letters[1:3], times=c(2,7,1)),
+                    Subfamily=rep(c("SF1", "SF2", times=c(2,8))),
                     LowEl=runif(10, 0, 1000))
 sp.df$HighEl <- sp.df$LowEl + runif(10, 0, 1000)
 els <- seq(0, 2000, by=100)

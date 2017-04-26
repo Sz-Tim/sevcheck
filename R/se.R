@@ -1,7 +1,9 @@
 #' standard error function
 #'
-#' This function calculates the standard error for a vector because R for some reason doesn't. 
+#' This function calculates the standard error for a vector because R for 
+#' some reason doesn't. 
 #' @param x A numeric vector
+#' @return standard error value
 #' @keywords standard error
 #' @note NAs are removed from the calculation
 #' @export

@@ -7,5 +7,6 @@
 nf()
 }
 \description{
-This function loads the necessary libraries and runs document() to create the documentation for any newly added functions.
+This function loads the necessary libraries and runs document() to create the 
+documentation for any newly added functions.
 }

@@ -9,6 +9,9 @@ logit(p)
 \arguments{
 \item{p}{A numeric vector, matrix, or array of proportions}
 }
+\value{
+Object of the same dimensions as p
+}
 \description{
 This function calculates the logit for the object 'p' (range 0 to 1),
 returning the corresponding values (range -Inf to Inf).

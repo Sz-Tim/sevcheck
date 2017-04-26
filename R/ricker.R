@@ -6,6 +6,7 @@
 #' @param r Vector (length nSpp) of the average intrinsic growth rate for each species
 #' @param N Matrix (nrow=tMax, ncol=nSpp) to store abundances; N[1,] must be initialized
 #' @param K Vector (length nSpp) of the carrying capacity for each species
+#' @return Updated matrix N with simulated abundances
 #' @keywords Ricker, simulation, deterministic
 #' @export
 #' @examples
@@ -41,6 +42,7 @@ rick.mod.det <- function(nSpp, tMax, r, N, K) {
 #' @param N Matrix (nrow=tMax, ncol=nSpp) to store abundances; N[1,] must be initialized
 #' @param K Vector (length nSpp) of the carrying capacity for each species
 #' @param sd Vector (length nSpp) of the standard deviation in annual growth rate for each species
+#' @return Updated matrix N with simulated abundances
 #' @keywords Ricker, simulation, deterministic
 #' @export
 #' @examples

@@ -17,6 +17,9 @@ rick.mod.det(nSpp, tMax, r, N, K)
 
 \item{K}{Vector (length nSpp) of the carrying capacity for each species}
 }
+\value{
+Updated matrix N with simulated abundances
+}
 \description{
 This function generates deterministic population abundances for a nSpp species.
 }
