@@ -1,4 +1,3 @@
-
 #' logit function
 #'
 #' This function calculates the logit for the object 'p' (range 0 to 1),
