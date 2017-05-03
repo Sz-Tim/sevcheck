@@ -15,9 +15,9 @@
 #' K <- runif(3, 100, 200)
 #' N <- matrix(nrow=tMax, ncol=nSpp)
 #' N[1,] <- K
-#' N <- rick.mod.det(nSpp, tMax, r, N, K)
+#' N <- rick.det(nSpp, tMax, r, N, K)
 #' 
-rick.mod.det <- function(nSpp, tMax, r, N, K) {
+rick.det <- function(nSpp, tMax, r, N, K) {
   # values: nSpp, tMax
   # vectors: r, K (length nSpp)
   # matrix: N (nrow=tMax, ncol=nSpp)
@@ -52,9 +52,9 @@ rick.mod.det <- function(nSpp, tMax, r, N, K) {
 #' K <- runif(3, 100, 200)
 #' N <- matrix(nrow=tMax, ncol=nSpp)
 #' N[1,] <- K
-#' N <- rick.mod.stoch(nSpp, tMax, r, N, K, sd)
+#' N <- rick.stoch(nSpp, tMax, r, N, K, sd)
 #' 
-rick.mod.stoch <- function(nSpp, tMax, r, N, K, sd) {
+rick.stoch <- function(nSpp, tMax, r, N, K, sd) {
   # values: nSpp, tMax
   # vectors: r, K, sd (length nSpp)
   # matrix: N (nrow=tMax, ncol=nSpp)
