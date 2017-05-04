@@ -9,10 +9,10 @@
 #' @export
 
 zone.freqmx <- function(zone.r, value.r) {
-  zone.l <- layerize(zone.r) # layerize zones
-  value.r <- projectRaster(value.r, zone.r) # ensure projections are the same
+  zone.l <- raster::layerize(zone.r) # layerize zones
+  value.r <- raster::projectRaster(value.r, zone.r) # ensure projections are the same
   value.l <- value.r * zone.l # separate values by zone
-  freq.l <- freq(value.l, merge=TRUE, useNA="no") # calculate frequencies
+  freq.l <- raster::freq(value.l, merge=TRUE, useNA="no") # calculate frequencies
   m.l <- as.matrix(freq.l[,-1])  # convert to matrix
   rownames(m.l) <- freq.l$value
   colnames(m.l) <- substr(names(zone.l), 2, max(nchar(names(zone.l))))
@@ -44,7 +44,7 @@ zone.H <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
   }
   m.l <- m.l[rownames(m.l) != na.val,]
   m.l[is.na(m.l)] <- 0
-  H <- diversity(m.l, MARGIN=2)
+  H <- vegan::diversity(m.l, MARGIN=2)
   return(H)
 }
 

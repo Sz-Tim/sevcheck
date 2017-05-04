@@ -5,5 +5,5 @@
 #' @export
 
 nf <- function() {
-  document()
+  devtools::document()
 }
