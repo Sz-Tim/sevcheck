@@ -7,7 +7,6 @@
 #' @return matrix (rows = unique value, columns = zones, cells = sums)
 #' @keywords raster, zonal, zone
 #' @export
-#' @examples
 
 zone.freqmx <- function(zone.r, value.r) {
   require(raster); require(vegan)
@@ -38,7 +37,6 @@ zone.freqmx <- function(zone.r, value.r) {
 #' @return named vector (names = zones, values = Shannon H)
 #' @keywords raster, diversity, Shannon H, zonal, zone
 #' @export
-#' @examples
 
 zone.H <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
   require(raster); require(vegan)
@@ -66,7 +64,6 @@ zone.H <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
 #' @return named vector (names = zones, values = mean of cell values)
 #' @keywords raster, sum, total, zonal, zone
 #' @export
-#' @examples
 
 zone.mean <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
   require(raster)
@@ -96,7 +93,6 @@ zone.mean <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
 #' @return named vector (names = zones, values = sum of cell values)
 #' @keywords raster, sum, total, zonal, zone
 #' @export
-#' @examples
 
 zone.sum <- function(zone.r, value.r, exclude.anthro=TRUE, na.val="na") {
   require(raster)
