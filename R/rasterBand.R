@@ -9,7 +9,6 @@
 #' @export
 
 zone.freqmx <- function(zone.r, value.r) {
-  require(raster); require(vegan)
   zone.l <- layerize(zone.r) # layerize zones
   value.r <- projectRaster(value.r, zone.r) # ensure projections are the same
   value.l <- value.r * zone.l # separate values by zone
@@ -39,7 +38,6 @@ zone.freqmx <- function(zone.r, value.r) {
 #' @export
 
 zone.H <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
-  require(raster); require(vegan)
   m.l <- zone.freqmx(zone.r, value.r)
   if(exclude.anthro) {
     m.l <- m.l[!rownames(m.l) %in% c(11,12,23,24),]
@@ -66,7 +64,6 @@ zone.H <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
 #' @export
 
 zone.mean <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
-  require(raster)
   m.l <- zone.freqmx(zone.r, value.r)
   if(exclude.anthro) {
     m.l <- m.l[!rownames(m.l) %in% c(11,12,23,24),]
@@ -95,7 +92,6 @@ zone.mean <- function(zone.r, value.r, exclude.anthro=FALSE, na.val="na") {
 #' @export
 
 zone.sum <- function(zone.r, value.r, exclude.anthro=TRUE, na.val="na") {
-  require(raster)
   m.l <- zone.freqmx(zone.r, value.r)
   if(exclude.anthro) {
     m.l <- m.l[!rownames(m.l) %in% c(11,12,23,24),]

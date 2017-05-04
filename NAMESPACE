@@ -2,6 +2,7 @@
 
 export(antilogit)
 export(logit)
+export(nf)
 export(rick.det)
 export(rick.stoch)
 export(se)
