@@ -4,6 +4,8 @@
 #' histogram to be used in the panels instead of the default scatterplot. This
 #' works best on the diagonal (panel.diag=panel.hist).
 #' 
+#' @export 
+
 panel.hist <- function(x, ...)
 {
   usr <- par("usr"); on.exit(par(usr))
@@ -24,6 +26,7 @@ panel.hist <- function(x, ...)
 #' correlation coefficients to be used in the panels instead of the default 
 #' scatterplot. The font size is scaled. (panel.upper=panel.hist).
 #' 
+#' @export
 panel.cor <- function(x, y, digits = 2, prefix = "", cex.cor, ...)
 {
   usr <- par("usr"); on.exit(par(usr))

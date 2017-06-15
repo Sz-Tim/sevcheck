@@ -3,6 +3,8 @@
 export(antilogit)
 export(logit)
 export(nf)
+export(panel.cor)
+export(panel.hist)
 export(rick.det)
 export(rick.stoch)
 export(se)
