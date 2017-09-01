@@ -13,5 +13,5 @@ Imports:
   devtools,
   raster, 
   roxygen2,
-  vegan,
-  pacman
+  vegan
+Depends: pacman
