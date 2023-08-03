@@ -8,7 +8,7 @@ Description: This just contains a bunch of functions that I'll use a lot.
 License: Free for everyone but mostly me.
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 7.2.3
 Imports: 
   devtools,
   raster, 
@@ -16,4 +16,3 @@ Imports:
   vegan
 Depends: 
   pacman
-
