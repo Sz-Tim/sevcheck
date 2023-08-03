@@ -4,12 +4,12 @@
 \alias{img_to_gif}
 \title{Create a gif from a set of images}
 \usage{
-img_to_gif(files, steps_per_s, out_name, remove_img = F)
+img_to_gif(files, fps, out_name, remove_img = F)
 }
 \arguments{
 \item{files}{Vector of file paths to images, in order}
 
-\item{steps_per_s}{Number of images per second}
+\item{fps}{Frames per second}
 
 \item{out_name}{File name of gif output}
 
