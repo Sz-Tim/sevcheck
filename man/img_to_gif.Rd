@@ -4,7 +4,7 @@
 \alias{img_to_gif}
 \title{Create a gif from a set of images}
 \usage{
-img_to_gif(files, fps, out_name, remove_img = F)
+img_to_gif(files, fps, out_name, optimize = T, remove_img = F)
 }
 \arguments{
 \item{files}{Vector of file paths to images, in order}
@@ -12,6 +12,9 @@ img_to_gif(files, fps, out_name, remove_img = F)
 \item{fps}{Frames per second}
 
 \item{out_name}{File name of gif output}
+
+\item{optimize}{Argument to magick::image_animate; If \code{TRUE}, difference 
+between images is stored}
 
 \item{remove_img}{If \code{TRUE}, remove all img files; default \code{FALSE}}
 }
